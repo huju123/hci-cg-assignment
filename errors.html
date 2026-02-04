@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Common HTML Errors</title>
+
+<style>
+body { font-family: Arial, sans-serif; }
+.note-box { background-color:#e7f3ff; }
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>10 Common HTML Errors with Corrections</h1>
+</header>
+
+<nav aria-label="Primary navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="analysis.html">Interaction Analysis</a></li>
+<li><a href="errors.html" aria-current="page">HTML Errors</a></li>
+<li><a href="quiz.html">HTML Quiz</a></li>
+<li><a href="references.html">References</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section>
+
+<h2>1. Missing alt Attribute</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;img src="photo.jpg"&gt;</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;img src="photo.jpg" alt="Student using laptop"&gt;</code></pre>
+
+<p>Images must include alt text for accessibility.</p>
+
+<hr>
+
+<h2>2. Multiple h1 Elements</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;h1&gt;Home&lt;/h1&gt;
+&lt;h1&gt;About&lt;/h1&gt;</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;h1&gt;Home&lt;/h1&gt;
+&lt;h2&gt;About&lt;/h2&gt;</code></pre>
+
+<p>Only one h1 is allowed per page.</p>
+
+<hr>
+
+<h2>3. Link Outside li</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;ul&gt;
+&lt;a href="index.html"&gt;Home&lt;/a&gt;
+&lt;/ul&gt;</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;ul&gt;
+&lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+<p>Links inside lists must be wrapped in li.</p>
+
+<hr>
+
+<h2>4. Label Not Connected</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;label&gt;Name&lt;/label&gt;
+&lt;input id="name"&gt;</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;label for="name"&gt;Name&lt;/label&gt;
+&lt;input id="name"&gt;</code></pre>
+
+<p>Labels must match input id.</p>
+
+<hr>
+
+<h2>5. Table Without Caption</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;table&gt;...&lt;/table&gt;</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;table&gt;
+&lt;caption&gt;Student Marks&lt;/caption&gt;
+&lt;/table&gt;</code></pre>
+
+<p>Tables need captions for screen readers.</p>
+
+<hr>
+
+<h2>6. Using div Instead of nav</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;div&gt;Menu&lt;/div&gt;</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;nav&gt;Menu&lt;/nav&gt;</code></pre>
+
+<p>Semantic tags improve accessibility.</p>
+
+<hr>
+
+<h2>7. Skipping Headings</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;h1&gt;Title&lt;/h1&gt;
+&lt;h3&gt;Section&lt;/h3&gt;</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;h1&gt;Title&lt;/h1&gt;
+&lt;h2&gt;Section&lt;/h2&gt;</code></pre>
+
+<p>Heading levels must not skip.</p>
+
+<hr>
+
+<h2>8. Missing aria-current</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;a href="errors.html"&gt;Errors&lt;/a&gt;</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;a href="errors.html" aria-current="page"&gt;Errors&lt;/a&gt;</code></pre>
+
+<p>Active page must be indicated.</p>
+
+<hr>
+
+<h2>9. Button Without Type</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;button&gt;Submit&lt;/button&gt;</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code></pre>
+
+<p>Button type avoids unexpected behavior.</p>
+
+<hr>
+
+<h2>10. Unclosed Tags</h2>
+
+<p><strong>Wrong:</strong></p>
+<pre><code>&lt;p&gt;Hello</code></pre>
+
+<p><strong>Correct:</strong></p>
+<pre><code>&lt;p&gt;Hello&lt;/p&gt;</code></pre>
+
+<p>All tags must be properly closed.</p>
+
+</section>
+
+</main>
+
+<footer>
+<p><a href="index.html">Back Home</a></p>
+</footer>
+
+</body>
+</html>
